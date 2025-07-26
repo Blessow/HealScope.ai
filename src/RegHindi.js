@@ -13,6 +13,9 @@ function RegHindi() {
   const home = () => {
     navigate('/HomeHindi');
   };
+  const Login = () => {
+    navigate('/LoginHindi'); 
+  }
 
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -103,7 +106,7 @@ function RegHindi() {
           <div className="button-container">
             <button type="submit" className="button">पंजीकरण करें</button>
           </div>
-          <p>पहले से अकाउंट है? <a href="/LoginHindi" className="forgot">लॉगिन करें</a></p>
+          <p>पहले से अकाउंट है? <a href="/LoginHindi" onClick={Login} className="forgot">लॉगिन करें</a></p>
         </div>
       </form>
     </div>

@@ -12,6 +12,9 @@ function RegTamil() {
   const home = () => {
     navigate('/HomeTamil');
   };
+  const Login = () => {
+    navigate('/LoginTamil'); 
+  }
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
@@ -101,7 +104,7 @@ function RegTamil() {
           <div className="button-container">
             <button type="submit" className="button">பதிவு</button>
           </div>
-          <p>ஏற்கனவே கணக்கு உள்ளதா? <a href="/LoginTamil" className="forgot">உள்நுழையவும்</a></p>
+          <p>ஏற்கனவே கணக்கு உள்ளதா? <a href="/LoginTamil" onClick={Login} className="forgot">உள்நுழையவும்</a></p>
         </div>
       </form>
     </div>

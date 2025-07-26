@@ -13,6 +13,12 @@ function LoginTamil() {
     const home = () => {
     navigate('/HomeTamil');
     };
+    const Forgot = () => {
+    navigate('/ForgotTamil');  
+  }
+  const Register = () => {
+    navigate('/RegTamil');  
+  }
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -71,10 +77,10 @@ function LoginTamil() {
                     <label htmlFor="password">கடவுச்சொல்:</label>
                     <input type="password" id="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="🔐 உங்கள் கடவுச்சொல்லை உள்ளிடவும்" required />
                     <div className="button-container">
-                        <a href="/ForgotTamil" className="forgot">கடவுச்சொல்லை மறந்துவிட்டீர்களா?</a>
+                        <a href="/ForgotTamil" onClick={Forgot} className="forgot">கடவுச்சொல்லை மறந்துவிட்டீர்களா?</a>
                         <button type="submit" className="button">உள்நுழை</button>
                     </div>
-                    <p>கணக்கு இல்லை?<a href="/RegTamil" className="forgot">பதிவு செய்யவும்</a></p>
+                    <p>கணக்கு இல்லை?<a href="/RegTamil" onClick={Register} className="forgot">பதிவு செய்யவும்</a></p>
                 </div>
             </form>
         </div>

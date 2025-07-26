@@ -15,6 +15,12 @@ function Hindi() {
     const home = () => {
     navigate('/HomeHindi');
     };
+    const Forgot = () => {
+    navigate('/ForgotHindi');  
+  }
+  const Register = () => {
+    navigate('/RegHindi');  
+  }
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
@@ -87,10 +93,10 @@ function Hindi() {
                     />
 
                     <div className="button-container">
-                        <a href="/ForgotHindi" className="forgot">पासवर्ड भूल गए?</a>
+                        <a href="/ForgotHindi" onClick={Forgot} className="forgot">पासवर्ड भूल गए?</a>
                         <button type="submit" className="button">लॉगिन</button>
                     </div>
-                    <p>खाता नहीं है?<a href="/RegHindi" className="forgot">पंजीकरण करें</a></p>
+                    <p>खाता नहीं है?<a href="/RegHindi" onClick={Register} className="forgot">पंजीकरण करें</a></p>
                 </div>
             </form>
         </div>

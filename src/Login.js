@@ -13,6 +13,12 @@ function Login() {
   const home = () => {
     navigate('/');
   };
+  const Forgot = () => {
+    navigate('/Forgot');  
+  }
+  const Register = () => {
+    navigate('/Reg');  
+  }
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Form submitted:", { email, password });
@@ -102,10 +108,10 @@ function Login() {
           />
 
           <div className="button-container">
-            <a href="/Forgot" className="forgot">Forgot Password?</a>
+            <a onClick={Forgot} href="/Forgot" className="forgot">Forgot Password?</a>
             <button type="submit" className="button">Login</button>
           </div>
-          <p>Don't have an account? <a href="/reg" className="forgot">Register</a></p>
+          <p>Don't have an account? <a href="/Register" onClick={Register} className="forgot">Register</a></p>
         </div>
       </form>
     </div>
