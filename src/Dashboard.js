@@ -7,6 +7,7 @@ function Dashboard() {
   const navigate = useNavigate();
   const [preview, setPreview] = useState(null);
   const [fileInfo, setFileInfo] = useState("");
+  const [selectedFile, setSelectedFile] = useState(null); // ✅ New
   const [showResult, setShowResult] = useState(false);
   const [dragActive, setDragActive] = useState(false);
   const [aiResult, setAiResult] = useState("");
@@ -55,18 +56,16 @@ function Dashboard() {
 
   const getPromptText = () => {
     switch (language) {
-      case "ta":
-        return "இந்த மருத்துவ படத்தை பகுப்பாய்வு செய்யவும்.";
-      case "hi":
-        return "इस मेडिकल छवि का विश्लेषण करें।";
-      default:
-        return "Analyze this medical image.";
+      case "ta": return "இந்த மருத்துவ படத்தை பகுப்பாய்வு செய்யவும்.";
+      case "hi": return "इस मेडिकल छवि का विश्लेषण करें।";
+      default: return "Analyze this medical image.";
     }
   };
 
   const handleSubmit = async () => {
-    if (!inputRef.current?.files?.[0]) return;
-    const file = inputRef.current.files[0];
+    const file = selectedFile || inputRef.current?.files?.[0];
+    if (!file) return;
+
     setShowResult(true);
     setIsLoading(true);
     setAiResult("");
@@ -92,6 +91,7 @@ function Dashboard() {
   const previewImage = (event) => {
     const file = event.target.files[0];
     if (!file) return;
+    setSelectedFile(file); // ✅ store selected file
     const reader = new FileReader();
     document.body.classList.add("loading");
     reader.onload = () => {
@@ -103,6 +103,7 @@ function Dashboard() {
   };
 
   const handleReset = () => {
+    setSelectedFile(null); // ✅ clear selected file
     setPreview(null);
     setFileInfo("");
     setShowResult(false);
@@ -114,7 +115,9 @@ function Dashboard() {
     e.stopPropagation();
     setDragActive(false);
     if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-      previewImage({ target: { files: e.dataTransfer.files } });
+      const file = e.dataTransfer.files[0];
+      setSelectedFile(file); // ✅ store dropped file
+      previewImage({ target: { files: [file] } });
     }
   };
 
