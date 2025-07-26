@@ -64,7 +64,7 @@ function RegTamil() {
         <div className="login">
           <h1>பதிவு</h1>
 
-          <label htmlFor="username">பயனர் பெயர்:</label>
+          <label htmlFor="username">பயனர்பெயர்:</label>
           <input
             type="text"
             id="username"

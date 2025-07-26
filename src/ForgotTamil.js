@@ -36,7 +36,7 @@ function ForgotTamil() {
     <div className='forout'>
       <div className="navbar">
         <div className="logo">
-          <b>Healscope.ai</b>
+          <b>ஹீல்ஸ்கோப்.ஏஐ</b>
         </div>
         <div className="left">
           <select className="btn lang" value={lang} onChange={handleLanguageChange}>
