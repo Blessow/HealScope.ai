@@ -1,4 +1,4 @@
-import './Reg.css';
+import './Login.css';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { createUserWithEmailAndPassword } from "firebase/auth";
@@ -104,7 +104,7 @@ function RegTamil() {
           <div className="button-container">
             <button type="submit" className="button">பதிவு</button>
           </div>
-          <p>ஏற்கனவே கணக்கு உள்ளதா? <a href="/LoginTamil" onClick={Login} className="forgot">உள்நுழையவும்</a></p>
+          <p>ஏற்கனவே கணக்கு உள்ளதா? <button onClick={Login} className="forgot">உள்நுழையவும்</button></p>
         </div>
       </form>
     </div>

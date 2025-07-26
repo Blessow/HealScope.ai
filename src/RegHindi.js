@@ -1,4 +1,4 @@
-import './Reg.css';
+import './Login.css';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { createUserWithEmailAndPassword } from "firebase/auth";
@@ -106,7 +106,7 @@ function RegHindi() {
           <div className="button-container">
             <button type="submit" className="button">पंजीकरण करें</button>
           </div>
-          <p>पहले से अकाउंट है? <a href="/LoginHindi" onClick={Login} className="forgot">लॉगिन करें</a></p>
+          <p>पहले से अकाउंट है? <button onClick={Login} className="forgot">लॉगिन करें</button></p>
         </div>
       </form>
     </div>

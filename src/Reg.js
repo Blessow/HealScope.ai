@@ -1,4 +1,4 @@
-import './Reg.css';
+import './Login.css';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { createUserWithEmailAndPassword } from "firebase/auth";
@@ -104,7 +104,7 @@ function Reg() {
           <div className="button-container">
             <button type="submit" className="button">Register</button>
           </div>
-          <p>Already have an account? <a href="https://blessow.github.io/Login" onClick={Login} className="forgot">Login</a></p>
+          <p>Already have an account? <button onClick={Login} className="forgot">Login</button></p>
         </div>
       </form>
     </div>
