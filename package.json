@@ -2,7 +2,7 @@
   "name": "smart",
   "version": "0.1.0",
   "private": true,
-   "homepage": " https://blessow.github.io/HealScope.ai",
+   "homepage":"https://Blessow.github.io/HealScope.ai",
   "dependencies": {
     "@firebasegen/default-connector": "file:dataconnect-generated/js/default-connector",
     "@testing-library/dom": "^10.4.0",
