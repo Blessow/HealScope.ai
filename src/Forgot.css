@@ -1,0 +1,55 @@
+.forout{
+    margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #f8f7f7;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+label{
+  justify-content: left;
+  margin-bottom: 0%;
+  margin-right: 350px;
+}
+.forinput{
+    margin-left: 40px;
+}
+.forbox{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to bottom right,rgb(40, 74, 228), rgb(158, 170, 242));
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    height:310px;
+    width: 470px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.682);
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+.forform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+}
+.buttonfor{
+    background-color: rgb(1, 22, 114);
+    height:50px;
+    width: 150px;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-left: 60px;
+    cursor: pointer;
+}
+.buttonfor:hover{
+    background-color: rgba(16, 69, 194, 0.892);
+    color: rgb(255, 255, 255);
+}
