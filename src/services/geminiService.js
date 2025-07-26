@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyD3iMwYyyCdrjKFAU2ImoUmRYXZfDoaaAo";
+const API_KEY = "AIzaSyCdf5_7K_-usm2z29v-Wr8Jc1_gvNxHW8w";
 
 
 export async function analyzeImage(file, promptText = "Analyze this image.") {
