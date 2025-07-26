@@ -106,7 +106,7 @@ function RegHindi() {
           <div className="button-container">
             <button type="submit" className="button">पंजीकरण करें</button>
           </div>
-          <p>पहले से अकाउंट है? <button onClick={Login} className="forgot">लॉगिन करें</button></p>
+          <p>पहले से अकाउंट है? <button type="button" onClick={Login} className="forgot">लॉगिन करें</button></p>
         </div>
       </form>
     </div>

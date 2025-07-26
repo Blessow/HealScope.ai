@@ -93,10 +93,10 @@ function Hindi() {
                     />
 
                     <div className="button-container">
-                        <button onClick={Forgot} className="forgot">पासवर्ड भूल गए?</button>
+                        <button type="button" onClick={Forgot} className="forgot">पासवर्ड भूल गए?</button>
                         <button type="submit" className="button">लॉगिन</button>
                     </div>
-                    <p>खाता नहीं है?<button onClick={Register} className="forgot">पंजीकरण करें</button></p>
+                    <p>खाता नहीं है?<button type="button" onClick={Register} className="forgot">पंजीकरण करें</button></p>
                 </div>
             </form>
         </div>

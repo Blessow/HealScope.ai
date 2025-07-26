@@ -108,10 +108,10 @@ function Login() {
           />
 
           <div className="button-container">
-            <button onClick={Forgot} className="forgot">Forgot Password?</button>
+            <button type="button" onClick={Forgot} className="forgot">Forgot Password?</button>
             <button type="submit" className="button">Login</button>
           </div>
-          <p>Don't have an account? <button onClick={Register} className="forgot">Register</button></p>
+          <p>Don't have an account? <button type="button" onClick={Register} className="forgot">Register</button></p>
         </div>
       </form>
     </div>

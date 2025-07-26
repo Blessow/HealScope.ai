@@ -104,7 +104,7 @@ function Reg() {
           <div className="button-container">
             <button type="submit" className="button">Register</button>
           </div>
-          <p>Already have an account? <button onClick={Login} className="forgot">Login</button></p>
+          <p>Already have an account? <button type="button" onClick={Login} className="forgot">Login</button></p>
         </div>
       </form>
     </div>

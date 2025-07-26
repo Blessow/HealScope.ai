@@ -104,7 +104,7 @@ function RegTamil() {
           <div className="button-container">
             <button type="submit" className="button">பதிவு</button>
           </div>
-          <p>ஏற்கனவே கணக்கு உள்ளதா? <button onClick={Login} className="forgot">உள்நுழையவும்</button></p>
+          <p>ஏற்கனவே கணக்கு உள்ளதா? <button type="button" onClick={Login} className="forgot">உள்நுழையவும்</button></p>
         </div>
       </form>
     </div>

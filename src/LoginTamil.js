@@ -77,10 +77,10 @@ function LoginTamil() {
                     <label htmlFor="password">கடவுச்சொல்:</label>
                     <input type="password" id="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="🔐 உங்கள் கடவுச்சொல்லை உள்ளிடவும்" required />
                     <div className="button-container">
-                        <button onClick={Forgot} className="forgot">கடவுச்சொல்லை மறந்துவிட்டீர்களா?</button>
+                        <button type="button" onClick={Forgot} className="forgot">கடவுச்சொல்லை மறந்துவிட்டீர்களா?</button>
                         <button type="submit" className="button">உள்நுழை</button>
                     </div>
-                    <p>கணக்கு இல்லை?<button onClick={Register} className="forgot">பதிவு செய்யவும்</button></p>
+                    <p>கணக்கு இல்லை?<button type="button" onClick={Register} className="forgot">பதிவு செய்யவும்</button></p>
                 </div>
             </form>
         </div>
