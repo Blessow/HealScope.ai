@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/HealScope.ai/static/css/main.4e8dea00.css",
-    "main.js": "/HealScope.ai/static/js/main.5502bb54.js",
+    "main.js": "/HealScope.ai/static/js/main.6726873a.js",
     "static/js/453.2b31ee18.chunk.js": "/HealScope.ai/static/js/453.2b31ee18.chunk.js",
     "static/media/heroimg.jpg": "/HealScope.ai/static/media/heroimg.772c6d543217db446929.jpg",
     "index.html": "/HealScope.ai/index.html",
     "main.4e8dea00.css.map": "/HealScope.ai/static/css/main.4e8dea00.css.map",
-    "main.5502bb54.js.map": "/HealScope.ai/static/js/main.5502bb54.js.map",
+    "main.6726873a.js.map": "/HealScope.ai/static/js/main.6726873a.js.map",
     "453.2b31ee18.chunk.js.map": "/HealScope.ai/static/js/453.2b31ee18.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e8dea00.css",
-    "static/js/main.5502bb54.js"
+    "static/js/main.6726873a.js"
   ]
 }
